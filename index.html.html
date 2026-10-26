@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dev Kumar Dwivedi — B.Tech student exploring AI/ML, programming, aerospace, and space science.">
+<title>Dev Kumar Dwivedi | AI, Technology & Space</title>
+<style>
+:root{--bg:#080b14;--panel:#111827;--panel2:#0d1422;--text:#f2f5ff;--muted:#aab4cb;--line:#273149;--violet:#9b8cff;--cyan:#65e6d1;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:radial-gradient(ellipse at 78% 0%,#20224a 0,transparent 33%),radial-gradient(ellipse at 8% 30%,#102b36 0,transparent 25%),var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:#080b14d9;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}
+nav{display:flex;justify-content:space-between;align-items:center;min-height:72px;gap:20px}
+.brand{font-weight:850;letter-spacing:-.06em;font-size:1.15rem}.brand span{color:var(--cyan)}
+.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--cyan)}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center;padding:92px 0 78px;min-height:550px}
+.eyebrow{font-size:.78rem;letter-spacing:.17em;text-transform:uppercase;color:var(--cyan);font-weight:800}
+h1{font-size:clamp(2.7rem,6.2vw,5.1rem);line-height:1.02;letter-spacing:-.07em;margin:18px 0 22px}
+.gradient{background:linear-gradient(100deg,#b9b0ff,#65e6d1);color:transparent;background-clip:text}
+.lead{font-size:1.1rem;color:var(--muted);max-width:640px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);padding:11px 17px;border-radius:12px;font-weight:750;transition:transform .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--cyan)}.btn.primary{background:var(--text);color:#090d19;border-color:var(--text)}
+.note{font-size:.82rem;color:var(--muted);margin-top:16px}
+.orbit{aspect-ratio:1;max-width:370px;width:100%;margin:auto;position:relative;display:grid;place-items:center}
+.ring{position:absolute;border:1px solid #8d9dff55;border-radius:50%;inset:7%;transform:rotate(-22deg)}
+.ring.two{inset:19%;border-color:#65e6d155;transform:rotate(43deg)}
+.planet{width:43%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 28%,#d5d1ff,#7775c9 36%,#353b7b 72%,#161d42);box-shadow:0 0 70px #8079ff50;position:relative}
+.planet:after{content:"";position:absolute;inset:39% -38%;border:8px solid #8cdbd5a8;border-left-color:#a49bff;border-right-color:#a49bff;border-radius:50%;transform:rotate(-24deg)}
+.star{position:absolute;color:var(--cyan);font-size:1.1rem}.s1{top:13%;right:17%}.s2{bottom:18%;left:10%}.s3{top:26%;left:10%;color:#b8aaff}
+section{padding:57px 0}.sectionhead{margin-bottom:25px}.sectionhead h2{font-size:clamp(1.8rem,3.4vw,2.55rem);line-height:1.15;letter-spacing:-.045em;margin:8px 0}.sectionhead p{color:var(--muted);margin:8px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(145deg,#131c2eec,#0d1422f2);border:1px solid var(--line);border-radius:18px;padding:23px}
+.card h3{font-size:1.08rem;margin:10px 0 6px}.card p{font-size:.94rem;color:var(--muted);margin:0}
+.symbol{font-size:1.5rem}.pill{display:inline-block;margin-top:15px;padding:4px 10px;border:1px solid #3a4561;border-radius:999px;background:#171f33;color:#d1d8f2;font-size:.76rem}
+.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.skills{display:flex;gap:9px;flex-wrap:wrap}.skill{border:1px solid var(--line);background:#121b2c;border-radius:10px;padding:7px 11px;font-size:.9rem}
+.interest{min-height:200px}
+.banner{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px;border:1px solid #34485e;border-radius:20px;background:linear-gradient(110deg,#1b2145,#103138)}
+.banner h2{margin:5px 0;font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.04em}.banner p{color:var(--muted);margin:0}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.87rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0 45px;gap:20px}.orbit{max-width:260px;grid-row:1}.grid{grid-template-columns:1fr}.aboutgrid{grid-template-columns:1fr}.navlinks{gap:13px;font-size:.82rem}.navlinks a:nth-child(2){display:none}.banner{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><nav class="wrap" aria-label="Main navigation">
+<a class="brand" href="#home">DEV<span>.</span></a>
+<div class="navlinks"><a href="#about">About</a><a href="#interests">Interests</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</nav></header>
+<main>
+<section class="hero wrap" id="home">
+<div>
+<div class="eyebrow">B.Tech Student · Curious Builder</div>
+<h1>Exploring <span class="gradient">AI.</span><br>Looking beyond Earth.</h1>
+<p class="lead">Hi, I'm Dev Kumar Dwivedi — a first-year B.Tech student learning programming and exploring Artificial Intelligence, Machine Learning, aerospace, and space science.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my journey ↘</a><a class="btn" href="#contact">Connect with me</a></div>
+<p class="note">Currently learning · Open to collaboration, feedback, and hackathon teams.</p>
+</div>
+<div class="orbit" aria-label="Decorative planet and orbital illustration"><div class="ring"></div><div class="ring two"></div><div class="planet"></div><span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">✦</span></div>
+</section>
+
+<section class="wrap" id="about">
+<div class="sectionhead"><div class="eyebrow">About me</div><h2>Learning today. Building for tomorrow.</h2><p>A beginner's journey into technology, with curiosity as the starting point.</p></div>
+<div class="aboutgrid">
+<article class="card"><div class="symbol">⌘</div><h3>My approach</h3><p>I'm building my technical foundation through programming practice, problem-solving, and hands-on learning. I value understanding how things work and improving through feedback.</p></article>
+<article class="card"><div class="symbol">↗</div><h3>What drives me</h3><p>I'm curious about how intelligent software can help solve real problems, and how computation connects with engineering and scientific discovery.</p></article>
+</div>
+</section>
+
+<section class="wrap" id="interests">
+<div class="sectionhead"><div class="eyebrow">Areas I'm exploring</div><h2>Big questions. One step at a time.</h2></div>
+<div class="grid">
+<article class="card interest"><div class="symbol">✦</div><h3>Artificial Intelligence & ML</h3><p>Exploring how AI systems learn from data and how machine learning can be applied to practical problems.</p><span class="pill">Learning & exploring</span></article>
+<article class="card interest"><div class="symbol">⌁</div><h3>Aerospace Engineering</h3><p>Interested in flight, propulsion, spacecraft, and the engineering challenges behind reaching beyond Earth.</p><span class="pill">Personal interest</span></article>
+<article class="card interest"><div class="symbol">◉</div><h3>Space Science & Astrophysics</h3><p>Curious about the universe, physical principles, and how computational tools can support scientific research.</p><span class="pill">Personal interest</span></article>
+</div>
+</section>
+
+<section class="wrap" id="skills">
+<div class="sectionhead"><div class="eyebrow">Current learning</div><h2>Tools & skills in progress.</h2><p>I'm a beginner and actively developing these skills; I don't claim expert-level experience.</p></div>
+<div class="card"><div class="skills">
+<span class="skill">C++ · Learning</span><span class="skill">Python · Learning</span><span class="skill">HTML & CSS · Practising</span><span class="skill">JavaScript · Exploring</span><span class="skill">DSA · Practising</span><span class="skill">AI/ML · Exploring</span><span class="skill">Git & GitHub · Learning</span><span class="skill">Problem-solving</span>
+</div></div>
+</section>
+
+<section class="wrap" id="projects">
+<div class="sectionhead"><div class="eyebrow">Projects & practice</div><h2>Documenting my progress.</h2><p>I'll add project links and demos as I finish and test each one.</p></div>
+<div class="grid">
+<article class="card"><div class="symbol">▣</div><h3>Personal Portfolio</h3><p>This responsive portfolio website introduces my interests and learning journey. Built with HTML and CSS.</p><span class="pill">Portfolio project</span></article>
+<article class="card"><div class="symbol">⌨</div><h3>C++ & DSA Practice</h3><p>Practising beginner programming exercises and learning to reason through algorithms step by step.</p><span class="pill">Ongoing practice</span></article>
+<article class="card"><div class="symbol">✧</div><h3>Next: AI mini-project</h3><p>Planning to build a small AI-related project as I learn. This is a future goal, not a completed project.</p><span class="pill">Planned · Not started</span></article>
+</div>
+</section>
+
+<section class="wrap" id="contact">
+<div class="banner"><div><div class="eyebrow">Let's connect</div><h2>Build, learn, and explore together.</h2><p>Interested in hackathons, collaborative learning, and meaningful tech projects.</p></div><a class="btn primary" id="githubLink" href="https://github.com/" target="_blank" rel="noreferrer">GitHub profile ↗</a></div>
+<p class="note">Before publishing: replace the GitHub link with your own profile URL. Add a contact email only if you want it public.</p>
+</section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Dev Kumar Dwivedi · Made while learning.</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
